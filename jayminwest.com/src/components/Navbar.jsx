@@ -1,22 +1,36 @@
-import { Flex, Box, Heading, Spacer, Link, Button, HStack} from '@chakra-ui/react';
-
+import { Flex, IconButton, Heading, Spacer, Link, Button, HStack} from '@chakra-ui/react';
+import { FaGithub, FaLinkedin,FaYoutube } from 'react-icons/fa';
 
 export default function Navbar() {
     return (
-        <Flex as="nav" mx={20} py={10} alignItems="center">
-            <Heading>Jaymin West</Heading>
+        <Flex as="nav" py={10} alignItems="center">
+            <Heading minW={"200px"}>Jaymin West</Heading>
             <Spacer />
 
-            <HStack spacing="20px">
-                <Button>
-                    <Link target="_blank" href='https://github.com/jayminwest'>GitHub</Link>
-                </Button>
-                <Button>
-                    <Link target="_blank" href='https://www.linkedin.com/in/jaymin-west/'>LinkedIn</Link>
-                </Button>
-                <Button>
-                    <Link target='_blank' href="https://www.youtube.com/channel/UCtrGZc-hme--8LECM0dMS5A">YouTube</Link>
-                </Button>
+            <HStack spacing={["10px", "20px"]}>
+                <IconButton 
+                    as="a" 
+                    target='=_blank'
+                    aria-label="GitHub"
+                    icon={<FaGithub/>}
+                    href="https://github.com/jayminwest"
+                />
+                <IconButton 
+                    as="a" 
+                    target='=_blank'
+                    aria-label="LinkedIn"
+                    icon={<FaLinkedin/>}
+                    colorScheme='linkedin'
+                    href="https://www.linkedin.com/in/jaymin-west/"
+                />
+                <IconButton 
+                    as="a" 
+                    target='=_blank'
+                    aria-label="YouTube"
+                    icon={<FaYoutube/>}
+                    colorScheme='red'
+                    href="https://www.youtube.com/channel/UCtrGZc-hme--8LECM0dMS5A"
+                />
             </HStack>
         </Flex>
     )
