@@ -7,7 +7,7 @@ export default function ProjectsSection() {
     // </Flex> 
     
     <Flex wrap="wrap">
-        <Heading minW={"200px"}>Projects</Heading>
+        <Heading minW={"200px"}>Personal Projects</Heading>
     {cardData.map((card, index) => (
       <Box key={index} flex="1" m="2" minWidth="300px">
         <Card {...card} />
@@ -39,7 +39,7 @@ const cardData = [
 
 // Component for each card
 const Card = ({ imageSrc, text }) => (
-    <Box borderWidth="1px" borderRadius="lg" overflow="hidden" p="4">
+    <Box borderWidth="1.5px" borderRadius="lg" overflow="hidden" p="4">
         {/* <Image src={imageSrc} alt="Card Image" mb="4" /> */}
         <Text>{text}</Text>
         <Button mt="4" colorScheme="teal">
