@@ -2,11 +2,9 @@ import { Box, Circle, Text, VStack } from '@chakra-ui/react';
 
 export default function Header() {
     const textStyle = {
-        color:"black",
+        color:"white",
+        fontWeight: 'bold',
         fontSize: ["1em", "2em", "3em"],
-        ':hover': {
-            fontWeight: 'bold'
-        }
     }
 
     return (

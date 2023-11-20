@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom"
 import Navbar from "../components/Navbar"
 import Header from "../components/Header"
 import ProjectsSection from "../components/ProjectsSection"
-import { Box, Spacer } from '@chakra-ui/react'
+import { Box, Spacer, Heading } from '@chakra-ui/react'
 
 export default function RootLayout() {
   return (
@@ -19,6 +19,7 @@ export default function RootLayout() {
       <Navbar />
       <Header />
       <Spacer />
+      <Heading minW={"200px"} paddingBottom={10} paddingTop={40}>Personal Projects</Heading>
       <ProjectsSection />
       <Outlet />
     </Box>

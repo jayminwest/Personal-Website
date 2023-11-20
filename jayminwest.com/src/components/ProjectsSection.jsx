@@ -1,4 +1,4 @@
-import { Box, Circle, Text, Button, Flex, Heading} from '@chakra-ui/react';
+import { Box, Circle, Text, Button, Flex, Heading, Image} from '@chakra-ui/react';
 
 export default function ProjectsSection() {
   return (
@@ -7,7 +7,6 @@ export default function ProjectsSection() {
     // </Flex> 
     
     <Flex wrap="wrap">
-        <Heading minW={"200px"}>Personal Projects</Heading>
     {cardData.map((card, index) => (
       <Box key={index} flex="1" m="2" minWidth="300px">
         <Card {...card} />
@@ -20,29 +19,29 @@ export default function ProjectsSection() {
 // Sample data for the cards
 const cardData = [
     {
-        imageSrc: 'url-to-image-1.jpg',
-        text: 'Text for card 1',
+        imageSrc: '..\..\public\img\snow-pack-proj-pic.PNG',
+        text: 'Snow Pack Prediction Using GPT-4',
     },
     {
         imageSrc: 'url-to-image-2.jpg',
-        text: 'Text for card 2',
+        text: 'March Madness Prediction',
     },
     {
         imageSrc: 'url-to-image-3.jpg',
-        text: 'Text for card 3',
+        text: 'https://github.com/jayminwest/Python-Sorting-Algorithms-Visualization',
     },
     {
         imageSrc: 'url-to-image-4.jpg',
-        text: 'Text for card 4',
+        text: 'Forex-GPT',
     },
 ];
 
 // Component for each card
 const Card = ({ imageSrc, text }) => (
     <Box borderWidth="1.5px" borderRadius="lg" overflow="hidden" p="4">
-        {/* <Image src={imageSrc} alt="Card Image" mb="4" /> */}
+        <Image src={imageSrc} alt="Card Image" mb="4" />
         <Text>{text}</Text>
-        <Button mt="4" colorScheme="teal">
+        <Button mt="4" colorScheme="red">
         Learn More
         </Button>
     </Box>
