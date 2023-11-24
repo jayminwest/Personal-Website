@@ -1,7 +1,9 @@
-import React from 'react'
+import { Card } from '@chakra-ui/react';
 
 export default function LeadershipSection() {
   return (
-    <div>LeadershipSection</div>
+    <Card>
+        
+    </Card>
   )
 }

@@ -19,39 +19,39 @@ export default function ProjectsSection() {
 // Sample data for the cards
 const cardData = [
     {
-        imageSrc: 'snow-pack-proj-pic.PNG',
+        imageSrc: '../snow-pack-proj-pic.PNG',
         text: 'Snow Pack Prediction Using GPT-4',
         description:"Custom trained GPT model using data gathered from avalanche forecast centers. Uses vector database and GPT to give user advice on dangerous snow conditions.",
-        link:"",
+        link:"https://github.com/jayminwest/Snow-Pack-Layer-Prediction",
     },
     {
-        imageSrc: 'jayminwest.com\public\img\ncaa-predictions-proj-pic.PNG',
+        imageSrc: '../ncaa-predictions-proj-pic.PNG',
         text: 'March Madness Prediction',
-        description:"Custom Neural Network trained on data from Kenpom to predict the outcome of NCAA Men's Basketball games",
-        link:"",
+        description:"Custom Neural Network trained on data from Kenpom to predict the outcome of NCAA Men's Basketball games.",
+        link:"https://github.com/jayminwest/NCAA-Game-Predictions",
     },
     {
-        imageSrc: 'jayminwest.com\public\img\sorting-algorithms-proj-pic.PNG',
+        imageSrc: '../sorting-algorithms-proj-pic.PNG',
         text: "Sorting Algorithm Visualization",
-        description: "A simple program that displays common sorting algorithms using Tkinter",
+        description: "A simple program that displays common sorting algorithms using Tkinter.",
         link:'https://github.com/jayminwest/Python-Sorting-Algorithms-Visualization',
     },
     {
-        imageSrc: 'jayminwest.com/public/img/forexgpt-proj-pic.png',
+        imageSrc: '../forexgpt-proj-pic.PNG',
         text: 'Forex-GPT',
-        description:"A work in progess that aims to function as a real-time collection of GPT agents working to provide analysis on Forex markets",
-        link: "temp-link.com"
+        description:"A work in progess that aims to function as a real-time collection of GPT agents working to provide analysis on Forex markets.",
+        link: "https://github.com/jayminwest/ForexGPT"
     },
 ];
 
 // Component for each card
 const Card = ({ imageSrc, text, description, link }) => (
     <Box borderWidth="1.5px" borderRadius="lg" overflow="hidden" p="4">
-        <Image src={imageSrc} alt="Card Image" mb="4" />
+        <Image src={imageSrc} alt="Card Image" mb="4" height="200px"/>
         <Text fontWeight="bold">{text}</Text>
         <Text>{description}</Text>
         <Button as="a" mt="4" colorScheme="red" target="_blank" href={link}>
-        Learn More
+        View Project
         </Button>
     </Box>
 );
