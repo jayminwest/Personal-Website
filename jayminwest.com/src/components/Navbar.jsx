@@ -1,5 +1,5 @@
 import { Flex, IconButton, Heading, Spacer, Link, Button, HStack} from '@chakra-ui/react';
-import { FaGithub, FaLinkedin,FaYoutube } from 'react-icons/fa';
+import { FaGithub, FaLinkedin,FaYoutube, FaFilePdf } from 'react-icons/fa';
 
 export default function Navbar() {
     return (
@@ -8,6 +8,14 @@ export default function Navbar() {
             <Spacer />
 
             <HStack spacing={["10px", "20px"]}>
+                <IconButton 
+                    as="a" 
+                    target='=_blank'
+                    aria-label="Resume"
+                    icon={<FaFilePdf/>}
+                    colorScheme='teal'
+                    href="../jaymin_west_software_resume_11-23.pdf"
+                />
                 <IconButton 
                     as="a" 
                     target='=_blank'

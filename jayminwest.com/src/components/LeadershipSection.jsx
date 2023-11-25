@@ -11,7 +11,7 @@ const LeadershipSection = () => {
         {/* Text on the left */}
         <Box flex="1" pr={{ base: 0, md: 8 }} minHeight={{ base: "300px", md: "500px" }} display="flex" flexDirection="column" justifyContent="center">
           <Text fontSize="1.2em">
-           During the past four years I have been able to pursue my passion as an outdoor educator and leader. This has lead me to lead students of all ages through a variety of environments and situations. From mountaineering in the Tetons to white water rafting in the PNW, I've learned first hand how impactful a good leader can be. 
+           During the past four years I have been able to pursue my passion as an outdoor educator and leader. This has allowed me to lead students of all ages through a variety of environments and situations. From mountaineering in the Tetons to white water rafting in the PNW, I've learned first hand how impactful a good leader can be. 
           </Text>
           <Text mt={4} fontSize="1.2em">
             Mixing technical ability with the soft-skills required to facilitate high risk activites has provided me a framework for being a balanced and effective leader. I'm convinced that these skills transfer directly into all parts of my professional and personal life and I look forward to applying them more and more as my career progresses.

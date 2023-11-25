@@ -27,12 +27,12 @@ export default function RootLayout() {
       <ProjectsSection />
       <Heading minW={"200px"} paddingBottom={10} paddingTop={40} textAlign="center">TECHNICAL SKILLS</Heading>
       <SkillsSection />
+      <Heading minW={"200px"} paddingBottom={0} paddingTop={40}>ABOUT ME</Heading>
+      <AboutMeSection />
       <Heading minW={"200px"} paddingBottom={0} paddingTop={40}>LEADERSHIP EXPERIENCE</Heading>
       <LeadershipSection />
-      <Heading minW={"200px"} paddingBottom={10} paddingTop={40}>ABOUT ME</Heading>
-      <AboutMeSection />
-      <Heading minW={"200px"} paddingBottom={10} paddingTop={40}>GET IN TOUCH</Heading>
-      <ContactSection />
+      <Heading minW={"200px"} paddingBottom={0} paddingTop={40} textAlign="center">GET IN TOUCH</Heading>
+      <ContactSection paddingBottom={10}/>
       <Outlet />
     </Box>
   )
