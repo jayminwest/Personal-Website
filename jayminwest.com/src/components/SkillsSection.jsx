@@ -13,7 +13,13 @@ const SkillsSection = ({ svgData = defaultSvgData }) => {
   return (
     <Grid templateColumns="repeat(3, 1fr)" gap={6}>
       {svgData.map((svg, index) => (
-        <Box key={index} p={4} borderWidth="0px" borderRadius="lg">
+        <Box 
+          key={index} 
+          p={4} 
+          borderWidth="0px" 
+          borderRadius="lg" 
+          boxSize={175}
+          >
           <img src={svg} alt={`Logo ${index}`} />
         </Box>
       ))}

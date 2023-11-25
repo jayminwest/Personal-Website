@@ -25,9 +25,9 @@ export default function RootLayout() {
       <Spacer />
       <Heading minW={"200px"} paddingBottom={10} paddingTop={40}>PERSONAL PROJECTS</Heading>
       <ProjectsSection />
-      <Heading minW={"200px"} paddingBottom={10} paddingTop={40}>TECHNICAL SKILLS</Heading>
+      <Heading minW={"200px"} paddingBottom={10} paddingTop={40} textAlign="center">TECHNICAL SKILLS</Heading>
       <SkillsSection />
-      <Heading minW={"200px"} paddingBottom={10} paddingTop={40}>LEADERSHIP EXPERIENCE</Heading>
+      <Heading minW={"200px"} paddingBottom={0} paddingTop={40}>LEADERSHIP EXPERIENCE</Heading>
       <LeadershipSection />
       <Heading minW={"200px"} paddingBottom={10} paddingTop={40}>ABOUT ME</Heading>
       <AboutMeSection />
