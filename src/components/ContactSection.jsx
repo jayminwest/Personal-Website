@@ -1,4 +1,4 @@
-import { Box, Heading, Flex, Button, ButtonGroup } from "@chakra-ui/react";
+import { Box, Heading, Flex, Button, ButtonGroup, Stack } from "@chakra-ui/react";
 import { FaFilePdf, FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa";
 
 const ContactSection = () => {
@@ -9,61 +9,59 @@ const ContactSection = () => {
 
   return (
     <Box mt={8}>
-      <Flex direction="column" align="center">
-        <ButtonGroup spacing={6}>
-          {/* Resume Button */}
-          <Button
-            leftIcon={<FaFilePdf />}
-            colorScheme="teal"
-            size="lg"
-            as="a"
-            href={resumeLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Resume
-          </Button>
+      <Stack direction={['column', 'row']} spacing={4} justify="center">
+        {/* Resume Button */}
+        <Button
+          leftIcon={<FaFilePdf />}
+          colorScheme="teal"
+          size="lg"
+          as="a"
+          href={resumeLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume
+        </Button>
 
-          {/* GitHub Button */}
-          <Button
-            leftIcon={<FaGithub />}
-            colorScheme="gray"
-            size="lg"
-            as="a"
-            href={githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </Button>
+        {/* GitHub Button */}
+        <Button
+          leftIcon={<FaGithub />}
+          colorScheme="gray"
+          size="lg"
+          as="a"
+          href={githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </Button>
 
-          {/* LinkedIn Button */}
-          <Button
-            leftIcon={<FaLinkedin />}
-            colorScheme="blue"
-            size="lg"
-            as="a"
-            href={linkedinLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </Button>
+        {/* LinkedIn Button */}
+        <Button
+          leftIcon={<FaLinkedin />}
+          colorScheme="blue"
+          size="lg"
+          as="a"
+          href={linkedinLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </Button>
 
-          {/* YouTube Button */}
-          <Button
-            leftIcon={<FaYoutube />}
-            colorScheme="red"
-            size="lg"
-            as="a"
-            href={youtubeLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            YouTube
-          </Button>
-        </ButtonGroup>
-      </Flex>
+        {/* YouTube Button */}
+        <Button
+          leftIcon={<FaYoutube />}
+          colorScheme="red"
+          size="lg"
+          as="a"
+          href={youtubeLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          YouTube
+        </Button>
+      </Stack>
     </Box>
   );
 };

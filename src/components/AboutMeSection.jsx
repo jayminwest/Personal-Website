@@ -14,6 +14,7 @@ const AboutMeSection = () => {
             height="100%"
             width="100%"
             pr="10"
+            pt={5}
           />
         </Box>
 

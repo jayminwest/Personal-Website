@@ -27,6 +27,7 @@ const LeadershipSection = () => {
             objectFit="cover" // This property ensures the image is cropped to cover the specified dimensions
             height="100%"
             width="100%"
+            pt={5}
           />
         </Box>
       </Flex>
